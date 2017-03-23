@@ -1,0 +1,25 @@
+{
+  "name": "themes",
+  "version": "1.0.0",
+  "description": "Themes allow you to change the look and feel of your Drupal site. You can use themes contributed by others or create your own.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.18.8",
+    "compass": "^0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-uglify": "^2.1.1",
+    "imagemin": "^5.2.2",
+    "jshint": "^2.9.4",
+    "node-sass": "^4.5.0",
+    "susy": "^2.2.12"
+  }
+}

@@ -1,0 +1,61 @@
+.region-footer-top {
+    padding-bottom: 30px;
+    background-color: #f7f9fb;
+    #block-venue-2 {
+        // background-color: #f7f9fb;
+        h2 {
+            text-transform: uppercase;
+            padding-top: 60px;
+            font-size: 30px;
+            color: #0074bd;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .venue-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .venue-place {
+                width: 50%;
+                .venue-description {
+                    padding-left: 200px;
+                    line-height: 40px;
+                }
+            }
+            .venue-map {
+                width: 50%;
+                padding-bottom: 50px;
+                padding-right: 120px;
+            }
+            button {
+                background-color: white;
+                border-color: white;
+                box-shadow: 2px 1px 0px;
+            }
+        }
+    }
+    #block-madewithlovebyqed42 {
+        text-align: right;
+        padding-right: 150px;
+        padding-bottom:20px;
+        color:grey;
+    }
+}
+
+.region-footer {
+    background-color: black;
+    color: grey;
+    .follow-content {
+        text-align: right;
+        line-height: 80px;
+        padding-right: 150px;
+        img {
+            height: 20px;
+            width: 20px;
+            padding-left: 6px;
+        }
+    }
+}
+ // .path-frontpage .region-footer-top {
+ //     background-color: #f7f9fb;
+ // }

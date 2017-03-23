@@ -1,0 +1,109 @@
+#block-internship2017-sessionbanner {
+    position: relative;
+}
+.session-banner-caption {
+    position: absolute;
+    bottom: 100px;
+    margin-left: 80px;
+    h1 {
+        font-size: 35px;
+        color: white;
+        padding-bottom: 20px;
+    }
+    a {
+        display: inline-block;
+        height: 5px;
+        line-height: 6px;
+        width: 140px;
+        background-color: #ec0342;
+        color: white;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+.selection-wrapper {
+    background-color: #f7f9fb;
+    padding-bottom: 30px;
+    .selection-content {
+        padding-bottom: 50px;
+        h2 {
+            text-transform: uppercase;
+            padding-top: 40px;
+            font-size: 25px;
+            color: #0074bd;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        p {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            color:grey;
+        }
+    }
+    .selection-link {
+        padding-top: 10px;
+        p {
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // justify-content: space-around;
+        }
+        a {
+            margin-bottom:20px;
+            margin-right:60px;
+            display: inline-block;
+            height: 5px;
+            line-height: 6px;
+            width: 140px;
+            background-color: #ec0342;
+            color: white;
+            border-radius: 2px;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}
+
+.selection-committee {
+    h2 {
+        text-transform: uppercase;
+        padding-top: 40px;
+        font-size: 25px;
+        color: #0074bd;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .about-committe {
+        p {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        li {
+            padding: 50px;
+            color: grey;
+            h3 {
+                text-transform: uppercase;
+                font-size: 16px;
+                color: #0074bd;
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+    img {
+        height: 250px;
+        width: 250px;
+    }
+}

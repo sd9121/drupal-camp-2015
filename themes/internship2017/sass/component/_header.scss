@@ -1,0 +1,29 @@
+.header-menu {
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: 2px solid transparent;
+        padding: 14px;
+    }
+    .menu-item {
+        font-size: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+        a {
+            padding: 23px;
+            color: grey;
+            &.is-active {
+                color:#ec0342;
+                border: 3px solid transparent !important;
+                border-bottom-color: #ec0342 !important;
+            }
+        }
+    }
+}

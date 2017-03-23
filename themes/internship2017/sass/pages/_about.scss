@@ -1,0 +1,109 @@
+.field__label {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #0074bd;
+    padding-top: 50px;
+}
+
+.drupal-group {
+    .caption-drupal-group {
+        text-transform: uppercase;
+        font-size: 25px;
+        color: #0074bd;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    p {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 20px;
+        color: grey;
+        a {
+            color: grey;
+        }
+        strong {
+            font-weight: bold;
+        }
+    }
+}
+
+.about-camp-2015 {
+    p {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 20px;
+        color: grey;
+    }
+}
+
+.camp-images {
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        li {
+            padding: 50px;
+            color: grey;
+            img {
+                height: 250px;
+                width: 100%;
+            }
+            h3 {
+                text-transform: uppercase;
+                font-size: 16px;
+                color: #0074bd;
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+.code-conduct {
+    padding: 30px;
+    text-align: center;
+    a {
+        display: inline-block;
+        height: 5px;
+        line-height: 6px;
+        width: 140px;
+        background-color: #ec0342;
+        color: white;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+.about-wrapper {
+    background-color: #f7f9fb;
+    margin-top: 45px;
+    .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+        margin: 0 auto;
+        padding: 20px;
+        .content-block {
+            color: grey;
+            padding: 20px;
+            h4 {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 16px;
+                color: #0074bd;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            p {
+                background-color: white;
+                padding: 30px;
+                box-shadow: 2px 2px 2px;
+            }
+        }
+    }
+}
