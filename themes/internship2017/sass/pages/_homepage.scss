@@ -1,5 +1,14 @@
+// Home page css with media query.
 @import 'netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css';
 .main-ticket {
+    p {
+        @include breakpoint($mobile) {
+            font-size: 16px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 14px;
+        }
+    }
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,6 +20,9 @@
         p {
             text-align: center;
         }
+        @include breakpoint( $mobile-menu2) {
+            width: 100%;
+        }
     }
     .tickets {
         display: flex;
@@ -18,6 +30,9 @@
         width: 50%;
         p {
             text-align: center;
+        }
+        @include breakpoint( $mobile-menu2) {
+            width: 100%;
         }
     }
     font-size:20px;
@@ -34,6 +49,19 @@
         padding: 20px;
         text-align: center;
         font-size: 16px;
+        @include breakpoint($mobile) {
+            width: 110px;
+            padding: 18px;
+            font-size: 14px;
+        }
+        @include breakpoint($iphone5) {
+            width: 100px;
+            font-size: 12px;
+            padding: 16px;
+        }
+    }
+    @include breakpoint( $mobile-menu2) {
+        flex-direction: column;
     }
 }
 
@@ -43,14 +71,14 @@
     justify-content: center;
     background-color: #f7f9fb;
     .keynote-speaker {
+        padding-top: 50px;
         font-size: 15px;
         line-height: 20px;
         color: grey;
         width: 55%;
         .keynote-speaker-content {
             width: 50%;
-            padding-left: 200px;
-            padding-top: 80px;
+            margin: 0 auto;
             h1 {
                 font-size: 22px;
                 color: #0074bd;
@@ -58,13 +86,60 @@
                 font-weight: bold;
             }
             .keynote-speaker-info {
-                padding-top: 60px;
+                padding-top: 30px;
                 padding-bottom: 60px;
             }
+            @include breakpoint($ipad-menu) {
+                width: 50%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile-menu1) {
+                width: 50%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile-menu2) {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+        @include breakpoint($ipad-menu) {
+            width: 100%;
+        }
+        @include breakpoint($mobile-menu1) {
+            width: 100%;
+            margin: 0 auto;
+        }
+        @include breakpoint($mobile-menu2) {
+            width: 100%;
+            margin: 0 auto;
         }
     }
     .keynote-speaker-image {
-        width: 45%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @include breakpoint($ipad-menu) {
+            width: 40%;
+            margin: 0 auto;
+        }
+        @include breakpoint($mobile-menu1) {
+            width: 50%;
+            margin: 0 auto;
+        }
+        @include breakpoint($mobile-menu2) {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    @include breakpoint($ipad-menu) {
+        flex-direction: column-reverse;
+    }
+    @include breakpoint($mobile-menu1) {
+        flex-direction: column-reverse;
+    }
+    @include breakpoint($mobile-menu2) {
+        flex-direction: column-reverse;
     }
 }
 
@@ -80,11 +155,24 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 80px;
+        flex-wrap: wrap;
+        // padding: 80px;
         img {
             height: 250px;
             width: 380px;
-            padding-right: 50px;
+            // padding-right: 50px;
+            @include breakpoint($desktop) {
+                width: 310px;
+            }
+            @include breakpoint($ipad-menu2) {
+                width: 250px;
+            }
+            @include breakpoint($mobile) {
+                width: 100%;
+            }
+            @include breakpoint($iphone5) {
+                width: 100%;
+            }
         }
         h1 {
             text-transform: uppercase;
@@ -95,37 +183,79 @@
         p {
             padding-top: 50px;
             color: grey;
+            @include breakpoint($mobile) {
+                padding-top: 25px;
+            }
+            @include breakpoint($iphone5) {
+                padding-top: 18px;
+            }
+        }
+        .event1,
+        .event2,
+        .event3 {
+            width: 30%;
+            padding-left: 10px;
+            padding-bottom: 50px;
+            @include breakpoint($tablet) {
+                width: 50%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile-menu2) {
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile) {
+                padding-left: 0px;
+            }
+            @include breakpoint($iphone5) {
+                padding-left: 0px;
+            }
+        }
+        @include breakpoint($tablet) {
+            flex-direction: column;
+        }
+        @include breakpoint($mobile-menu2) {
+            flex-direction: column;
+        }
+        @include breakpoint($mobile) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        @include breakpoint($iphone5) {
+            padding-left: 12px;
+            padding-right: 12px;
         }
     }
 }
 
 // .block-views {
-    h2 {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 30px;
-        color: #0074bd;
-        padding-top: 50px;
-        padding-bottom: 40px;
-    }
-    .view-our-sponsors {
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #0074bd;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.view-our-sponsors {
+    display: flex;
+    justify-content: center;
+    .view-content {
+        width: 60%;
         display: flex;
-        justify-content: center;
-        .view-content {
-            width: 60%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .views-row {
+            padding: 30px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            .views-row {
-                padding: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+            justify-content: center;
+            align-items: center;
         }
     }
-// }
+}
 
+// }
 #block-internship2017-helpusmakethisanawesomeexperience {
     padding-bottom: 50px;
     h2 {
@@ -148,7 +278,29 @@
             padding: 20px;
             text-align: center;
             font-size: 16px;
+            @include breakpoint($mobile) {
+                width: 110px;
+                padding: 18px;
+                font-size: 14px;
+            }
+            @include breakpoint($iphone5) {
+                width: 100px;
+                font-size: 12px;
+                padding: 16px;
+            }
         }
     }
 }
 
+#block-internship2017-helpusmakethisanawesomeexperience {
+    h2 {
+        @include breakpoint($mobile) {
+     font-size: 16px;
+ }
+
+ @include breakpoint($iphone5) {
+     font-size: 14px;
+ }
+
+    }
+}

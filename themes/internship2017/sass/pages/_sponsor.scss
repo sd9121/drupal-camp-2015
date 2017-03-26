@@ -1,16 +1,46 @@
+// sponsors page css with media query.
 .sponsors-benefit {
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
-    padding:50px;
-    color:grey;
+    padding: 50px;
+    color: grey;
+    line-height: 20px;
     p {
         text-transform: uppercase;
         color: black;
-        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 30px;
     }
-    .benefit-content{
-      width:30%;
+    .benefit-content {
+        width: 30%;
+        @include breakpoint($mobile-menu1) {
+            width: 100%;
+        }
+        @include breakpoint($mobile-menu2) {
+            width: 100%;
+        }
+    }
+    @include breakpoint($mobile-menu1) {
+        flex-direction: column;
+    }
+    @include breakpoint($mobile-menu2) {
+        flex-direction: column;
+    }
+}
+
+#block-benefitsofbeingasponsor-2 {
+    h2 {
+        @include breakpoint($mobile) {
+            font-size: 20px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 18px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
     }
 }

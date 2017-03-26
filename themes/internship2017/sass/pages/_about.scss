@@ -1,3 +1,4 @@
+// About page css with media query.
 .field__label {
     text-transform: uppercase;
     text-align: center;
@@ -7,6 +8,8 @@
 }
 
 .drupal-group {
+    width: 60%;
+    margin: 0 auto;
     .caption-drupal-group {
         text-transform: uppercase;
         font-size: 25px;
@@ -14,10 +17,18 @@
         padding-top: 10px;
         padding-bottom: 15px;
         text-align: center;
+        @include breakpoint($mobile) {
+            font-size: 20px;
+            padding-bottom: 30px;
+            padding-top: 10px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 18px;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
     }
     p {
-        width: 60%;
-        margin: 0 auto;
         padding-top: 20px;
         color: grey;
         a {
@@ -29,11 +40,27 @@
     }
 }
 
+.drupal-camp-2015 {
+    h2 {
+        @include breakpoint($mobile) {
+            font-size: 23px;
+            padding-bottom: 30px;
+            padding-top: 35px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 20px;
+            padding-bottom: 20px;
+            padding-top: 30px;
+        }
+    }
+}
+
 .about-camp-2015 {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
     p {
-        width: 40%;
-        margin: 0 auto;
-        text-align: center;
+        // text-align: center;
         line-height: 20px;
         color: grey;
     }
@@ -50,6 +77,7 @@
             img {
                 height: 250px;
                 width: 100%;
+                padding-bottom: 15px;
             }
             h3 {
                 text-transform: uppercase;
@@ -58,7 +86,43 @@
                 padding-top: 10px;
                 padding-bottom: 15px;
             }
+            @include breakpoint($tablet) {
+                width: 50%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile-menu2) {
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile) {
+                padding: 0px;
+                padding-top: 10px;
+            }
+            @include breakpoint($iphone5) {
+                padding: 0px;
+                padding-top: 10px;
+            }
         }
+        @include breakpoint($tablet) {
+            flex-direction: column;
+        }
+        @include breakpoint($mobile-menu2) {
+            flex-direction: column;
+        }
+        @include breakpoint($mobile) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        @include breakpoint($iphone5) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        // @include breakpoint($tablet) {
+        //     flex-direction: column;
+        // }
+        // @include breakpoint($mobile-menu2) {
+        //     flex-direction: column;
+        // }
     }
 }
 
@@ -76,6 +140,16 @@
         padding: 20px;
         text-align: center;
         font-size: 16px;
+        @include breakpoint($mobile) {
+            width: 110px;
+            padding: 18px;
+            font-size: 14px;
+        }
+        @include breakpoint($iphone5) {
+            width: 100px;
+            font-size: 12px;
+            padding: 16px;
+        }
     }
 }
 
@@ -96,7 +170,7 @@
                 text-align: center;
                 font-size: 16px;
                 color: #0074bd;
-                padding-top: 20px;
+                height: 30px;
                 padding-bottom: 20px;
             }
             p {
@@ -104,6 +178,27 @@
                 padding: 30px;
                 box-shadow: 2px 2px 2px;
             }
+        }
+        @include breakpoint($tablet) {
+            flex-direction: column;
+        }
+        @include breakpoint($mobile-menu2) {
+            flex-direction: column;
+        }
+    }
+}
+
+.sponsor-block {
+    a {
+        @include breakpoint($mobile) {
+            width: 110px;
+            padding: 18px;
+            font-size: 14px;
+        }
+        @include breakpoint($iphone5) {
+            width: 100px;
+            font-size: 12px;
+            padding: 16px;
         }
     }
 }

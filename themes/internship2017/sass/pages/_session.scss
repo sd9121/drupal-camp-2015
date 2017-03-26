@@ -1,6 +1,8 @@
+// Session page css with media query.
 #block-internship2017-sessionbanner {
     position: relative;
 }
+
 .session-banner-caption {
     position: absolute;
     bottom: 100px;
@@ -9,6 +11,18 @@
         font-size: 35px;
         color: white;
         padding-bottom: 20px;
+        @include breakpoint($ipad-menu2) {
+            font-size: 25px;
+        }
+        @include breakpoint($tablet) {
+            font-size: 20px;
+        }
+        @include breakpoint($mobile) {
+            font-size: 15px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 10px;
+        }
     }
     a {
         display: inline-block;
@@ -21,6 +35,41 @@
         padding: 20px;
         text-align: center;
         font-size: 16px;
+        @include breakpoint($ipad-menu2) {
+            width: 120px;
+            font-size: 14px;
+        }
+        @include breakpoint($tablet) {
+            width: 110px;
+            font-size: 12px;
+            padding: 18px;
+        }
+        @include breakpoint($mobile) {
+            width: 80px;
+            font-size: 10px;
+            padding: 15px;
+        }
+        @include breakpoint($iphone5) {
+            width: 60px;
+            font-size: 8px;
+            padding: 10px;
+        }
+    }
+    @include breakpoint($ipad-menu2) {
+        bottom: 80px;
+        margin-left: 50px;
+    }
+    @include breakpoint($tablet) {
+        bottom: 60px;
+        margin-left: 30px;
+    }
+    @include breakpoint($mobile) {
+        bottom: 30px;
+        margin-left: 10px;
+    }
+    @include breakpoint($iphone5) {
+        bottom: 20px;
+        margin-left: 10px;
     }
 }
 
@@ -36,12 +85,29 @@
             color: #0074bd;
             text-align: center;
             padding-bottom: 30px;
+            @include breakpoint($mobile) {
+                font-size: 20px;
+                padding-bottom: 25px;
+                padding-top: 35px;
+            }
+            @include breakpoint($iphone5) {
+                font-size: 18px;
+                padding-bottom: 20px;
+                padding-top: 30px;
+            }
         }
         p {
             text-align: center;
             width: 50%;
             margin: 0 auto;
-            color:grey;
+            color: grey;
+            line-height: 25px;
+            @include breakpoint($mobile) {
+                width: 90%;
+            }
+            @include breakpoint($iphone5) {
+                width: 90%;
+            }
         }
     }
     .selection-link {
@@ -51,11 +117,17 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+            line-height: 20px;
             // justify-content: space-around;
+            @include breakpoint($mobile-menu2) {
+                flex-direction: column;
+                padding: 0px;
+            }
         }
         a {
-            margin-bottom:20px;
-            margin-right:60px;
+            height: 10px;
+            margin-bottom: 20px;
+            margin-right: 60px;
             display: inline-block;
             height: 5px;
             line-height: 6px;
@@ -66,6 +138,21 @@
             padding: 20px;
             text-align: center;
             font-size: 16px;
+            @include breakpoint($tablet) {
+                margin-right: 30px;
+            }
+            @include breakpoint($mobile-menu2) {
+                margin-right: 20px;
+                width: 100px;
+            }
+            @include breakpoint ($iphone5) {
+                margin-right: 2px;
+            }
+        }
+        @include breakpoint($mobile-menu2) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
         }
     }
 }
@@ -78,20 +165,41 @@
         color: #0074bd;
         text-align: center;
         padding-bottom: 30px;
+        @include breakpoint($mobile) {
+            font-size: 20px;
+            padding-bottom: 30px;
+            padding-top: 0px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 18px;
+            padding-bottom: 20px;
+            padding-top: 0px;
+        }
     }
     .about-committe {
         p {
             text-align: center;
             width: 50%;
             margin: 0 auto;
+            color: grey;
+            line-height: 25px;
+            @include breakpoint($mobile) {
+                width: 90%;
+            }
+            @include breakpoint($iphone5) {
+                width: 90%;
+            }
         }
     }
     ul {
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
         li {
-            padding: 50px;
+            padding-right: 30px;
             color: grey;
             h3 {
                 text-transform: uppercase;
@@ -100,10 +208,91 @@
                 padding-top: 10px;
                 padding-bottom: 15px;
             }
+            p {
+                width: 250px;
+                line-height: 20px;
+                padding-bottom: 20px;
+                @include breakpoint($ipad-menu2) {
+                    width: 160px;
+                }
+                @include breakpoint($mobile) {
+                    width: 100%
+                }
+                @include breakpoint($iphone5) {
+                    width: 100%
+                }
+                @include breakpoint($tablet) {
+                    width: 100%
+                }
+            }
+            @include breakpoint($desktop) {
+                padding-right: 0px;
+            }
+            @include breakpoint($ipad-menu2) {
+                padding-right: 10px;
+            }
+            @include breakpoint($tablet) {
+                width: 70%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile-menu2) {
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile) {
+                padding: 0px;
+                padding-top: 10px;
+            }
+            @include breakpoint($iphone5) {
+                padding: 0px;
+                padding-top: 10px;
+            }
+        }
+        @include breakpoint($tablet) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include breakpoint($mobile-menu2) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include breakpoint($mobile) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        @include breakpoint($iphone5) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        @include breakpoint($ipad-menu2) {
+            justify-content: center;
+        }
+        @include breakpoint($desktop) {
+            justify-content: center;
         }
     }
     img {
         height: 250px;
-        width: 250px;
+        width: 280px;
+        @include breakpoint($mobile) {
+            width: 100%
+        }
+        @include breakpoint($iphone5) {
+            width: 100%
+        }
+        @include breakpoint($ipad-menu2) {
+            width: 190px;
+            // padding-right: 5px;
+        }
+        @include breakpoint($desktop) {
+            width: 220px;
+            padding-right: 18px;
+        }
+        @include breakpoint($tablet) {
+            width: 100%;
+        }
+        @include breakpoint($mobile-menu2) {
+            width: 100%;
+        }
     }
 }

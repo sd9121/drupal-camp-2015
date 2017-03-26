@@ -1,3 +1,16 @@
+@import "susy";
+@import "breakpoint";
+//$mobile: screen (max-width 320px);
+$mobile: 321px 640px;
+$iphone5:0px 320px;
+$ipad:930px;
+$ipad-menu:750px 960px;
+$ipad-menu2:825px 999px;
+$tablet:639px 824px;
+$mobile-menu1:650px 749px;
+$mobile-menu2:0px 649px;
+$desktop: 1000px 1280px;
+$all:0px 1400px;
 @import 'utilities/reset';
 @import 'component/header';
 @import 'component/banner';

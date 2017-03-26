@@ -1,6 +1,14 @@
-.banner,header {
+.banner,
+header {
     img {
         width: 100%;
-        height:auto;
+        height: auto;
+    }
+}
+
+.banner {
+    margin-top: -72px;
+    @include breakpoint($mobile-menu2) {
+        margin-top: 0px;
     }
 }

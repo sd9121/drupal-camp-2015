@@ -1,4 +1,16 @@
 .header-menu {
+    .menu-button {
+        img {
+            padding-left: 50px;
+            padding-top: 30px;
+            height: 50px;
+            width: 50px;
+            display: none;
+            @include breakpoint($mobile-menu2) {
+                display: initial;
+            }
+        }
+    }
     .menu {
         list-style-type: none;
         margin: 0;
@@ -7,23 +19,71 @@
         flex-direction: row;
         justify-content: center;
         border-bottom: 2px solid transparent;
-        padding: 14px;
+        // padding-bottom: 20px;
+        @include breakpoint($mobile-menu2) {
+            flex-direction: column;
+            // display: none;
+        }
     }
     .menu-item {
         font-size: 18px;
-        padding-left: 30px;
-        padding-right: 30px;
         padding-top: 30px;
-        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
         text-transform: uppercase;
+        z-index: 1;
         a {
             padding: 23px;
             color: grey;
             &.is-active {
-                color:#ec0342;
-                border: 3px solid transparent !important;
-                border-bottom-color: #ec0342 !important;
+                color: #ec0342;
+                border-bottom: 3px solid #ec0342;
+            }
+            @include breakpoint($mobile-menu1) {
+                padding: 16px;
+                padding-bottom: 23px;
+            }
+            @include breakpoint($mobile-menu2) {
+                padding: 10px;
+            }
+            @include breakpoint($ipad-menu2) {
+                padding: 16px;
+                padding-bottom: 23px;
             }
         }
+        @include breakpoint($ipad-menu) {
+            padding-left: 0px;
+            padding-right: 0px;
+            font-size: 16px;
+        }
+        @include breakpoint($mobile-menu1) {
+            padding-left: 0px;
+            padding-right: 0px;
+            font-size: 16px;
+        }
+        @include breakpoint($mobile-menu2) {
+            padding: 0px;
+            padding-top: 15px;
+            padding-left: 40px;
+            padding-bottom: 15px;
+        }
+        .logopath {
+            padding: 0px;
+            .logo-image {
+                margin-top: -30px;
+            }
+        }
+    }
+    .header-logo {
+        @include breakpoint($mobile-menu2) {
+            display: none;
+        }
+    }
+}
+
+.mobileview-hide {
+    @include breakpoint($mobile-menu2) {
+        display: none !important;
     }
 }

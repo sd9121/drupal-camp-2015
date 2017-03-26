@@ -2,7 +2,6 @@
     padding-bottom: 30px;
     background-color: #f7f9fb;
     #block-venue-2 {
-        // background-color: #f7f9fb;
         h2 {
             text-transform: uppercase;
             padding-top: 60px;
@@ -10,52 +9,145 @@
             color: #0074bd;
             text-align: center;
             padding-bottom: 30px;
+            @include breakpoint($mobile) {
+                font-size: 24px;
+                padding-bottom: 10px;
+                padding-top: 30px;
+            }
+            @include breakpoint($iphone5) {
+                font-size: 20px;
+                padding-bottom: 10px;
+                padding-top: 30px;
+            }
         }
         .venue-wrapper {
             display: flex;
             flex-direction: row;
             justify-content: center;
             .venue-place {
-                width: 50%;
+                width: 35%;
                 .venue-description {
-                    padding-left: 200px;
+                    // padding-left: 200px;
+                    width: 60%;
+                    margin: 0 auto;
                     line-height: 40px;
+                }
+                @include breakpoint($ipad-menu) {
+                    width: 100%;
+                }
+                @include breakpoint($mobile-menu1) {
+                    width: 100%;
+                }
+                @include breakpoint($mobile-menu2) {
+                    width: 100%;
                 }
             }
             .venue-map {
                 width: 50%;
-                padding-bottom: 50px;
-                padding-right: 120px;
+                img {
+                    width: 80%;
+                    height: auto;
+                    float: initial;
+                    padding-left: 60px;
+                    @include breakpoint($ipad-menu) {
+                        padding-left: 100px;
+                    }
+                    @include breakpoint($mobile-menu1) {
+                        padding: 60px;
+                    }
+                    @include breakpoint($mobile-menu2) {
+                        padding: 30px;
+                    }
+                }
+                @include breakpoint($ipad-menu) {
+                    width: 100%;
+                }
+                @include breakpoint($mobile-menu1) {
+                    width: 100%;
+                }
+                @include breakpoint($mobile-menu2) {
+                    width: 100%;
+                }
             }
             button {
                 background-color: white;
                 border-color: white;
                 box-shadow: 2px 1px 0px;
             }
+            @include breakpoint($ipad-menu) {
+                flex-direction: column-reverse;
+            }
+            @include breakpoint($mobile-menu1) {
+                flex-direction: column-reverse;
+            }
+            @include breakpoint($mobile-menu2) {
+                flex-direction: column-reverse;
+            }
         }
     }
     #block-madewithlovebyqed42 {
         text-align: right;
         padding-right: 150px;
-        padding-bottom:20px;
-        color:grey;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        color: grey;
+        @include breakpoint($mobile) {
+            padding-right: 20px;
+        }
+        @include breakpoint($iphone5) {
+            padding-right: 10px;
+        }
     }
 }
 
 .region-footer {
     background-color: black;
     color: grey;
+    position: relative;
     .follow-content {
-        text-align: right;
-        line-height: 80px;
-        padding-right: 150px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        // line-height: 90px;
+        p {
+            color: white;
+            line-height: 55px;
+            img {
+                height: 20px;
+                width: auto;
+                padding-left: 6px;
+            }
+            @include breakpoint($iphone5) {
+                line-height: 37px;
+            }
+            @include breakpoint($mobile) {
+                line-height: 52px;
+                font-size: 15px;
+            }
+        }
+    }
+    .footer-logo {
         img {
-            height: 20px;
-            width: 20px;
-            padding-left: 6px;
+            position: absolute;
+            bottom: 0px;
+            @include breakpoint($mobile) {
+                width: 100px;
+            }
+            @include breakpoint($iphone5) {
+                width: 85px;
+            }
+        }
+        p {
+            padding-left: 150px;
+            @include breakpoint($mobile) {
+                padding-left: 105px;
+                font-size: 14px;
+            }
+            @include breakpoint($iphone5) {
+                // width: 38px;
+                // padding-left: 95px;
+                display: none;
+            }
         }
     }
 }
- // .path-frontpage .region-footer-top {
- //     background-color: #f7f9fb;
- // }

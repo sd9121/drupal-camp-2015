@@ -1,6 +1,19 @@
+// Venue page css with media query.
 #block-contactus,
 #block-majorattractions {
     background-color: white;
+    h2 {
+        @include breakpoint($mobile) {
+            font-size: 18px;
+            padding-bottom: 0px;
+            padding-top: 30px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 16px;
+            padding-bottom: 0px;
+            padding-top: 30px;
+        }
+    }
 }
 
 .region-footer-top {
@@ -31,10 +44,68 @@
             img {
                 height: 250px;
                 width: 300px;
+                @include breakpoint($mobile) {
+                    width: 100%
+                }
+                @include breakpoint($iphone5) {
+                    width: 100%
+                }
+                @include breakpoint($ipad-menu2) {
+                    width: 190px;
+                    padding-right: 5px;
+                }
+                @include breakpoint($desktop) {
+                    width: 220px;
+                    padding-right: 18px;
+                }
+                @include breakpoint($tablet) {
+                    width: 100%;
+                }
+                @include breakpoint($mobile-menu2) {
+                    width: 100%;
+                }
             }
             p {
                 padding-top: 15px;
             }
+            @include breakpoint($tablet) {
+                width: 70%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile-menu2) {
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include breakpoint($mobile) {
+                padding: 0px;
+                padding-top: 10px;
+            }
+            @include breakpoint($iphone5) {
+                padding: 0px;
+                padding-top: 10px;
+            }
+        }
+        @include breakpoint($tablet) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include breakpoint($mobile-menu2) {
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include breakpoint($mobile) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        @include breakpoint($iphone5) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        @include breakpoint($ipad-menu2) {
+            justify-content: center;
+        }
+        @include breakpoint($desktop) {
+            justify-content: center;
         }
     }
 }
@@ -49,7 +120,7 @@
 
 .sponsor-block {
     text-align: center;
-    padding-bottom:30px;
+    padding-bottom: 30px;
     a {
         display: inline-block;
         height: 5px;
