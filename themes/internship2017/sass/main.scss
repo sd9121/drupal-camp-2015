@@ -10,7 +10,7 @@ $tablet:639px 824px;
 $mobile-menu1:650px 749px;
 $mobile-menu2:0px 649px;
 $desktop: 1000px 1280px;
-$all:0px 1400px;
+@import 'utilities/fonts';
 @import 'utilities/reset';
 @import 'component/header';
 @import 'component/banner';

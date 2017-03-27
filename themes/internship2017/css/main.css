@@ -1,4 +1,4 @@
-@import url(netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 html,
 body,
 div,
@@ -84,8 +84,11 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+}
+
+* {
+  font-family: 'Roboto', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -135,8 +138,7 @@ a {
 }
 
 .header-menu .menu-button img {
-  padding-left: 50px;
-  padding-top: 30px;
+  padding-top: 10px;
   height: 50px;
   width: 50px;
   display: none;
@@ -157,6 +159,7 @@ a {
 }
 @media (min-width: 0px) and (max-width: 649px) {
   .header-menu .menu {
+    background-color: #e4e4e4;
     flex-direction: column;
   }
 }
@@ -231,6 +234,22 @@ a {
 @media (min-width: 0px) and (max-width: 649px) {
   .mobileview-hide {
     display: none !important;
+  }
+}
+
+.mobile-view-header {
+  display: flex;
+  justify-content: space-around;
+}
+.mobile-view-header .drupal-camp-header-logo {
+  display: none;
+}
+.mobile-view-header .drupal-camp-header-logo img {
+  width: 60%;
+}
+@media (min-width: 0px) and (max-width: 649px) {
+  .mobile-view-header .drupal-camp-header-logo {
+    display: initial;
   }
 }
 
@@ -310,7 +329,7 @@ header img {
   .main-ticket a {
     width: 110px;
     padding: 18px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (min-width: 0px) and (max-width: 320px) {
@@ -622,6 +641,12 @@ h2 {
 
 #block-internship2017-sessionbanner {
   position: relative;
+  margin-top: -71px;
+}
+@media (min-width: 0px) and (max-width: 649px) {
+  #block-internship2017-sessionbanner {
+    margin-top: 0px;
+  }
 }
 
 .session-banner-caption {
@@ -1418,6 +1443,25 @@ h2 {
   padding: 20px;
   text-align: center;
   font-size: 16px;
+}
+
+#block-aboutbanner img {
+  height: 450px;
+}
+@media (min-width: 0px) and (max-width: 649px) {
+  #block-aboutbanner img {
+    height: 350px;
+  }
+}
+@media (min-width: 321px) and (max-width: 640px) {
+  #block-aboutbanner img {
+    height: 200px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  #block-aboutbanner img {
+    height: 200px;
+  }
 }
 
 .field__label {

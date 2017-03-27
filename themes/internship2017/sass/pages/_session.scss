@@ -1,6 +1,10 @@
 // Session page css with media query.
 #block-internship2017-sessionbanner {
     position: relative;
+    margin-top: -71px;
+    @include breakpoint($mobile-menu2) {
+        margin-top: 0px;
+    }
 }
 
 .session-banner-caption {

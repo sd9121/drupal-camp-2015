@@ -1,4 +1,19 @@
 // About page css with media query.
+#block-aboutbanner {
+    img {
+        height: 450px;
+        @include breakpoint($mobile-menu2) {
+            height: 350px;
+        }
+        @include breakpoint($mobile) {
+            height: 200px;
+        }
+        @include breakpoint($iphone5) {
+            height: 200px;
+        }
+    }
+}
+
 .field__label {
     text-transform: uppercase;
     text-align: center;

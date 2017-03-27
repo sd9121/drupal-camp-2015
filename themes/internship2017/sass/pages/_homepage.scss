@@ -1,5 +1,5 @@
 // Home page css with media query.
-@import 'netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css';
+// @import 'netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css';
 .main-ticket {
     p {
         @include breakpoint($mobile) {
@@ -52,7 +52,7 @@
         @include breakpoint($mobile) {
             width: 110px;
             padding: 18px;
-            font-size: 14px;
+            font-size: 13px;
         }
         @include breakpoint($iphone5) {
             width: 100px;
@@ -295,12 +295,10 @@ h2 {
 #block-internship2017-helpusmakethisanawesomeexperience {
     h2 {
         @include breakpoint($mobile) {
-     font-size: 16px;
- }
-
- @include breakpoint($iphone5) {
-     font-size: 14px;
- }
-
+            font-size: 16px;
+        }
+        @include breakpoint($iphone5) {
+            font-size: 14px;
+        }
     }
 }
