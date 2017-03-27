@@ -1,6 +1,9 @@
 @import "susy";
 @import "breakpoint";
-//$mobile: screen (max-width 320px);
+/*
+* Breakpoints for media query.
+*/
+
 $mobile: 321px 640px;
 $iphone5:0px 320px;
 $ipad:930px;
@@ -10,13 +13,63 @@ $tablet:639px 824px;
 $mobile-menu1:650px 749px;
 $mobile-menu2:0px 649px;
 $desktop: 1000px 1280px;
+
+/*
+*Import _fonts.scss file for font family.
+*/
+
 @import 'utilities/fonts';
+
+/*
+*Import _reset.scss file for reset browser.
+*/
+
 @import 'utilities/reset';
+
+/*
+*Import _header.scss file for header region.
+*/
+
 @import 'component/header';
+
+/*
+*Import _banner.scss file for banner image.
+*/
+
 @import 'component/banner';
+
+/*
+*Import _homepage.scss file for home page.
+*/
+
 @import 'pages/homepage';
+
+/*
+*Import _session.scss file for session page.
+*/
+
 @import 'pages/session';
+
+/*
+*Import _footer.scss file for footer region.
+*/
+
 @import 'component/footer';
+
+/*
+*Import _sponsor.scss file for sponsor page.
+*/
+
 @import 'pages/sponsor';
+
+/*
+*Import _venue.scss file for venue page.
+*/
+
 @import 'pages/venue';
+
+/*
+*Import _about.scss file for about page.
+*/
+
 @import 'pages/about';
