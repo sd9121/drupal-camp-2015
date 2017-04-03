@@ -1,0 +1,25 @@
+uuid: 2265d5fd-faf2-4323-a6af-f104f8bee9e5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - internship2017
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: internship2017_branding
+theme: internship2017
+region: '-1'
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

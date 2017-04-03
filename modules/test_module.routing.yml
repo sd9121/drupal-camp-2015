@@ -1,0 +1,8 @@
+test_module.testModule:
+  path: '/mypage/page'
+  defaults:
+    _controller: '\Drupal\test_module\Controller\ExampleController::testModule'
+    _title: 'My first page in Drupal8'
+    requirements:
+      _permission: 'access content'
+

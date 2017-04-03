@@ -1,0 +1,25 @@
+uuid: 9c75e8f2-9ef7-40d5-9cb7-a35ed5b48d81
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5e9b7354-df4f-42e8-a91e-3003971d8962'
+  module:
+    - block_content
+  theme:
+    - internship2017
+id: menubutton
+theme: internship2017
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:5e9b7354-df4f-42e8-a91e-3003971d8962'
+settings:
+  id: 'block_content:5e9b7354-df4f-42e8-a91e-3003971d8962'
+  label: menu-button
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

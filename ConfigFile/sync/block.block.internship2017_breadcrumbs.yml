@@ -1,0 +1,22 @@
+uuid: a034f0b6-4b89-449c-b935-d54d9241dd4c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - internship2017
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: internship2017_breadcrumbs
+theme: internship2017
+region: '-1'
+weight: -14
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

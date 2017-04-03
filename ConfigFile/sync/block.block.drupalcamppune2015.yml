@@ -1,0 +1,25 @@
+uuid: bfe4c9dc-8da3-4b8a-b4e3-ea055aa3410d
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:eebb415a-b6cb-45cf-a81c-4ae9ccf1e137'
+  module:
+    - block_content
+  theme:
+    - internship2017
+id: drupalcamppune2015
+theme: internship2017
+region: '-1'
+weight: -11
+provider: null
+plugin: 'block_content:eebb415a-b6cb-45cf-a81c-4ae9ccf1e137'
+settings:
+  id: 'block_content:eebb415a-b6cb-45cf-a81c-4ae9ccf1e137'
+  label: 'Drupal Camp Pune 2015'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,31 @@
+uuid: 99c7aa1a-5cc5-40d2-a88b-be7c52a30028
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e88851b1-410d-4fac-8e11-fc0819343c6d'
+  module:
+    - block_content
+    - system
+  theme:
+    - internship2017
+id: joinustomakethisanawesomeexperience
+theme: internship2017
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:e88851b1-410d-4fac-8e11-fc0819343c6d'
+settings:
+  id: 'block_content:e88851b1-410d-4fac-8e11-fc0819343c6d'
+  label: 'join us to make this an awesome experience'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }
